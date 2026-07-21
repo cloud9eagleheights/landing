@@ -3,64 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>CLOUD 9 Eagle Heights</title>
+
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: #f4f4f4;
     color: #333;
 }
-header {
-    background: #0d6efd;
-    color: white;
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+                url("https://via.placeholder.com/1200x600");
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 40px 20px;
+    color: white;
 }
-main {
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+.container {
     max-width: 700px;
-    margin: 30px auto;
+    margin: -50px auto 40px;
     background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
 }
+
 .button {
     display: block;
-    text-align: center;
-    text-decoration: none;
     padding: 16px;
     margin: 15px 0;
-    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
     color: white;
+    border-radius: 8px;
     font-size: 18px;
     font-weight: bold;
 }
-.stayz { background: #0066cc; }
-.booking { background: #003580; }
-.airbnb { background: #ff385c; }
+
+.stayz {
+    background: #0070c9;
+}
+
+.booking {
+    background: #003b95;
+}
+
+.airbnb {
+    background: #ff385c;
+}
+
 footer {
     text-align: center;
     color: #777;
-    margin: 30px;
+    padding-bottom: 30px;
+}
+
+@media (max-width:600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
 }
 </style>
+
 </head>
+
 <body>
-<header>
-<h1>CLOUD 9 Eagle Heights</h1>
-<p>Choose your favourite booking site</p>
-</header>
-<main>
+
+<section class="hero">
+    <h1>CLOUD 9 Eagle Heights</h1>
+</section>
+
+<div class="container">
+
 <p>
-Welcome! We'd love to host you. Select one of the booking platforms below to check availability and book your stay.
+Welcome to our holiday home. Relax, unwind and enjoy everything this beautiful location has to offer.
 </p>
-<a class="button stayz" href="https://homeaway.com.au/p9101147">Book on Stayz</a>
-<a class="button airbnb" href="https://airbnb.com.au/rooms/6390611">Book on AirBnB</a>
-<a class="button booking" href="https://booking.com/hotel/au/cloud-9-cliff-top-eagle-heights.en-gb.html">Book on Booking.com</a>
-</main>
+
+<a class="button stayz" href="https://homeaway.com.au/p9101147">
+Book on Stayz
+</a>
+
+<a class="button airbnb" href="https://airbnb.com.au/rooms/6390611">
+Book on AirBnB
+</a>
+
+<a class="button booking" href="https://booking.com/hotel/au/cloud-9-cliff-top-eagle-heights.en-gb.html">
+Book on Booking.com
+</a>
+
+</div>
+
 <footer>
-We look forward to welcoming you!
+© CLOUD 9 Eagle Heights
 </footer>
+
 </body>
 </html>
